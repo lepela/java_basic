@@ -2,7 +2,11 @@ package lesson07_oop;
 
 public class MethodMain {
 	public static void main(String[] args) {
-		System.out.println(Param.min(1,2,3,4,5,6));
+		System.out.println(1);
+		System.out.println(Param.min()); // 길이가 0인 배열
+		System.out.println(Param.min(new int[] {3,4,5})); // 길이가 0인 배열
+		
+		System.out.printf("%d", 123, 12, 1, "가나다라");
 	}
 }
 
