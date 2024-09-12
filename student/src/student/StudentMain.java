@@ -10,19 +10,22 @@ public class StudentMain {
 		
 		while(true) {
 			try {
-				int input = StudentUtils.nextInt("1. 조회 2. 등록 3. 수정 4. 삭제 5. 종료");
+				int input = ss.checkRange(StudentUtils.nextInt("1. 조회 2. 등록 3. 수정 4. 삭제 5. 종료"),1,5);
 				switch (input) {
 				case 1:
 					ss.list();
 					break;
 				case 2:
 					ss.add();
+					ss.cloneAndSort();
 					break;
 				case 3:
 					ss.modify();
+					ss.cloneAndSort();
 					break;
 				case 4:
 					ss.remove();
+					ss.cloneAndSort();
 					break;
 				case 5:
 					System.out.println("bye");
@@ -36,6 +39,7 @@ public class StudentMain {
 			}
 			catch (RuntimeException e) {
 				System.out.println(e.getMessage());
+				e.printStackTrace();
 			}
 			
 		}
