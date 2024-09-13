@@ -6,19 +6,9 @@ public class City extends SaleLocal{
 	public int[] buildCost = {2,1,4,6,6};// new int[5];
 	public int[] fee = {1,1,2,6,25}; //new int[5];
 	
-	
-	
-//	public City(int colorIdx, String name, int idx, int[] buildCost, int[] fee) {
-//		super(colorIdx, name, idx);
-//		this.buildCost = buildCost;
-//		this.fee = fee;
-//	}
-	
 	public City(int colorIdx, String name, int idx) {
 		super(colorIdx, name, idx);
 	}
-
-
 
 	public int getFee() {
 		int cnt = 0;
