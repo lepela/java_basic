@@ -4,6 +4,11 @@ import static student.StudentUtils.*;
 import java.util.Arrays;
 
 // Logic
+
+// argv, argc "  "
+
+// "abcdabcd".split("b") >> {"a", "cda", "cd"}
+
 public class StudentService {
 	private Student[] students = new Student[5];
 	private Student[] totalSortedStudents;
