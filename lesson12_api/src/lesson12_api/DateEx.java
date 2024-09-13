@@ -19,5 +19,9 @@ public class DateEx {
 		System.out.println(new Date(target));
 		
 		System.out.println(date.getYear() + 1900);
+		Date christmas = new Date(123, 11, 25, 0, 0, 0);
+		System.out.println(christmas);
+		
+//		System.out.println(christmas.get);
 	}
 }
