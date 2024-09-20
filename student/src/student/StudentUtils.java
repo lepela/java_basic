@@ -44,9 +44,11 @@ public class StudentUtils {
 				} else {
 					throw new IllegalArgumentException(errMsg);
 				}
+			} catch (NumberFormatException e) {
+				System.out.println("올바른 숫자를 입력하세요");
 			} catch (IllegalArgumentException iae) {
 				System.out.println(iae.getMessage());
-			}
+			} 
 		}
 	}
 }

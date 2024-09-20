@@ -12,6 +12,7 @@ public class StudentTest {
 //			
 //		}, "한글로 2~4글자로 입력하세요");
 //		StudentUtils.next("이름", String.class,t -> t.matches("^[가-힣]{2,4}"), "한글로 2~4글자로 입력하세요");
-		StudentUtils.next("숫자", Integer.class,t -> t < 0 , "0보다 큰값");
+		int i = StudentUtils.next("숫자", Integer.class,t -> t < 0 , "0보다 큰값");
+		System.out.println(i);
 	}
 }
